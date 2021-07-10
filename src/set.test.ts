@@ -32,12 +32,22 @@ describe("SuperSet class", () => {
 
     it("Checks that Set is a superset of B", () => {
       const b = new SuperSet<number>([1, 2]);
-      expect(set.isSuperSet(b)[0]).toBe(true);
+      expect(set.isSuperSet(b)).toBe(true);
     });
 
     it("Checks that Set is not a superset of B", () => {
       const b = new SuperSet<number>([1, 4]);
-      expect(set.isSuperSet(b)[0]).toBe(false);
+      expect(set.isSuperSet(b)).toBe(false);
+    });
+
+    it("Checks that Set is a subset of B", () => {
+      const b = new SuperSet<number>([1, 2, 3, 4]);
+      expect(set.isSubSet(b)).toBe(true);
+    });
+
+    it("Checks that Set is not a subset of B", () => {
+      const b = new SuperSet<number>([5]);
+      expect(set.isSubSet(b)).toBe(false);
     });
 
     it("Checks if Set is empty", () => {

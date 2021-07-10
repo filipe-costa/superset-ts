@@ -1,12 +1,8 @@
 {
-  "name": "set-ts",
-  "description": "This library extends the browser Set object",
-  "author": {
-    "name": "Filipe Costa",
-    "url": "https://github.com/filipe-costa"
-  },
-  "license": "MIT",
+  "name": "superset-ts",
   "version": "1.0.0",
+  "description": "This library extends the browser Set object",
+  "license": "MIT",
   "types": "./lib/index.d.ts",
   "main": "./lib/index.js",
   "scripts": {
@@ -29,5 +25,22 @@
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh//git@github.com/filipe-costa/superset-ts.git"
+  },
+  "keywords": [
+    "Set",
+    "set",
+    "ES6",
+    "functional programming",
+    "filter",
+    "map",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/filipe-costa/superset-ts/issues"
+  },
+  "homepage": "https://github.com/filipe-costa/superset-ts#readme"
 }

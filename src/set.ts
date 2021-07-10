@@ -58,13 +58,18 @@ export default class SuperSet<T> extends Set<T> {
     return this;
   };
 
-  isSuperSet = (b: SuperSet<T>): [boolean, SuperSet<T>] => {
+  isSuperSet = (b: SuperSet<T>): boolean => {
     for (const item of b) {
       if (!this.has(item)) {
-        return [false, this];
+        return false;
       }
     }
-    return [true, this];
+    return true;
+  };
+
+  isSubSet = (b: SuperSet<T>): boolean => {
+    const ss = this.intersection(b);
+    return ss.size > 0 && ss.size <= this.size;
   };
 
   remove = (value: T) => {
