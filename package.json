@@ -1,6 +1,6 @@
 {
   "name": "superset-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This library extends the browser Set object",
   "license": "MIT",
   "types": "./lib/index.d.ts",
