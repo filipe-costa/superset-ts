@@ -10,7 +10,7 @@
     "prettier:fix": "prettier --write .",
     "build": "tsc -p tsconfig.json && yarn build-rename-files",
     "build-rename-files": "ts-node ./scripts/rename.ts",
-    "test": "jest -u"
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.7",
@@ -34,13 +34,19 @@
     "Set",
     "set",
     "ES6",
-    "functional programming",
     "filter",
     "map",
     "typescript"
   ],
+  "author": {
+    "name": "Filipe Costa",
+    "url": "https://github.com/filipe-costa/"
+  },
   "bugs": {
     "url": "https://github.com/filipe-costa/superset-ts/issues"
   },
-  "homepage": "https://github.com/filipe-costa/superset-ts#readme"
+  "homepage": "https://github.com/filipe-costa/superset-ts#readme",
+  "files": [
+    "/lib"
+  ]
 }

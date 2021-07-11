@@ -5,7 +5,7 @@ const path = require("path");
 const libDir = path.join(__dirname, "..", "lib");
 
 fs.readdirSync(libDir).forEach((fileName: string) => {
-  const newName = fileName.replace("set", "index");
+  const newName = fileName.replace("superset", "index");
   const oldPath = `${libDir}/${fileName}`;
   const newPath = `${libDir}/${newName}`;
 
